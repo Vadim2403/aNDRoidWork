@@ -1,0 +1,11 @@
+﻿version: "3"
+services:
+    web:
+        build: .
+        ports:
+            - "5091:80"
+        restart: always
+        volumes:  
+            - .:/app/Uploaded
+            - ~/Uploaded:/app/Uploaded
+
